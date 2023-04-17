@@ -5,6 +5,7 @@ import com.company.springsecurity6tutorial.enums.Role;
 import com.company.springsecurity6tutorial.repository.UserRepository;
 import com.company.springsecurity6tutorial.request.RegisterRequest;
 import com.company.springsecurity6tutorial.response.AuthenticationResponse;
+import com.company.springsecurity6tutorial.token.TokenRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
