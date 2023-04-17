@@ -1,6 +1,5 @@
 package com.company.springsecurity6tutorial.service;
 
-import com.company.springsecurity6tutorial.token.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
