@@ -44,5 +44,4 @@ public class AuthenticationController {
         service.refreshToken(request, response);
     }
 
-
 }
