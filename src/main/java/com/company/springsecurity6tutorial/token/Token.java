@@ -32,5 +32,4 @@ public class Token {
     @JoinColumn(name = "user_id")
     public User user;
 
-
 }
