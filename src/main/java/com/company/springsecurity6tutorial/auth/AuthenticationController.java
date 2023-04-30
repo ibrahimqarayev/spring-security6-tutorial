@@ -1,6 +1,6 @@
 package com.company.springsecurity6tutorial.auth;
 
-import com.company.springsecurity6tutorial.request.AuthenticationRequest;
+import com.company.springsecurity6tutorial.request.LoginRequest;
 import com.company.springsecurity6tutorial.request.RegisterRequest;
 import com.company.springsecurity6tutorial.response.AuthenticationResponse;
 import com.company.springsecurity6tutorial.service.AuthenticationService;
@@ -31,7 +31,7 @@ public class AuthenticationController {
 
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> authenticate(
-            @RequestBody AuthenticationRequest request
+            @RequestBody LoginRequest request
     ) {
         return ResponseEntity.ok(service.authenticate(request));
     }
