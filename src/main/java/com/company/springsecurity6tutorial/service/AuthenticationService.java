@@ -3,6 +3,7 @@ package com.company.springsecurity6tutorial.service;
 import com.company.springsecurity6tutorial.entity.User;
 import com.company.springsecurity6tutorial.enums.Role;
 import com.company.springsecurity6tutorial.repository.UserRepository;
+import com.company.springsecurity6tutorial.request.LoginRequest;
 import com.company.springsecurity6tutorial.request.RegisterRequest;
 import com.company.springsecurity6tutorial.response.AuthenticationResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -44,7 +45,7 @@ public class AuthenticationService {
                 .build();
     }
 
-    public AuthenticationResponse authenticate(AuthenticationRequest request) {
+    public AuthenticationResponse authenticate(LoginRequest request) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getEmail(),
